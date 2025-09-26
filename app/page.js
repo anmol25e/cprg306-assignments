@@ -8,7 +8,6 @@ export default function Home() {
       </h1>
 
       <nav className="flex flex-col w-full px-4 py-2 space-y-1">
-        <Link className="hover:underline" href="/week-1">Week 1</Link>
         <Link className="hover:underline" href="/week-2">Week 2</Link>
         <Link className="hover:underline" href="/week-3">Week 3</Link>
         <Link className="hover:underline" href="/week-4">Week 4</Link>
