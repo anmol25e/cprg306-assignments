@@ -19,7 +19,7 @@ export default function ItemList() {
   ];
 
   return (
-    <section className="flex flex-wrap justify-center">
+    <section className="flex flex-col items-center">
       {items.map((item, index) => (
         <Item key={index} item={item} />
       ))}

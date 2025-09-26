@@ -1,10 +1,9 @@
 // /app/week-3/item.js
 export default function Item({ item }) {
   return (
-    <div className="border p-3 m-2 rounded shadow-md w-60 text-center">
+    <div className="bg-slate-800 text-white rounded p-4 m-2 w-full max-w-md">
       <h2 className="font-bold">{item.name}</h2>
-      <p>Quantity: {item.quantity}</p>
-      <p className="text-sm text-gray-600 capitalize">{item.category}</p>
+      <p>Buy {item.quantity} in {item.category}</p>
     </div>
   );
 }
