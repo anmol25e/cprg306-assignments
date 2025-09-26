@@ -2,7 +2,7 @@
 import Item from "./item";
 
 export default function ItemList() {
-  // paste instructor's objects but as an array
+  // Instructor's items put into an array
   const items = [
     { name: "milk, 4 L 🥛", quantity: 1, category: "dairy" },
     { name: "bread 🍞", quantity: 2, category: "bakery" },
@@ -19,15 +19,10 @@ export default function ItemList() {
   ];
 
   return (
-    <ul className="list-none">
+    <section className="flex flex-wrap justify-center">
       {items.map((item, index) => (
-        <Item
-          key={index}
-          name={item.name}
-          quantity={item.quantity}
-          category={item.category}
-        />
+        <Item key={index} item={item} />
       ))}
-    </ul>
+    </section>
   );
 }
