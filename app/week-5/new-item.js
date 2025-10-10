@@ -9,7 +9,7 @@ export default function NewItem() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Item Added:\nName: ${name}\nQuantity: ${quantity}\nCategory: ${category}`);
+    alert(`Name: ${name}\nQuantity: ${quantity}\nCategory: ${category}`);
     setName("");
     setQuantity(1);
     setCategory("produce");
@@ -31,7 +31,6 @@ export default function NewItem() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            required
             className="p-2 rounded-md text-white border border-gray-600 outline-none focus:border-gray-400"
           />
         </div>
